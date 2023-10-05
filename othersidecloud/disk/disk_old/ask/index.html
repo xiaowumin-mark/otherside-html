@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wp</title>
+    <style>
+        .card{
+            background-color: aliceblue;
+            width: 150px;
+            height: 50px;
+            transition:0.5s;
+            border-radius: 5px;
+            cursor: url(./oc.png),auto;
+        }
+        .card:hover{
+            background-color: #919191;
+            border-radius: 15px;
+
+        }
+        .card:hover .p_one{
+            color: #ffffff;
+            transition: 0.5s;
+        }
+        .card:hover .p_two{
+            color: #bce1ff;
+            transition: 0.5s;
+        }
+        .card:hover .go{
+            background-color: black;
+            border-bottom-right-radius:15px
+            
+        }
+        .card:hover .img{
+            margin-left: 10px;
+        }
+        .p_one{
+            font-family: 'Microsoft YaHei';
+            color: #2196f3;
+            text-align: center;
+            cursor: url(./oc.png),auto;
+        }
+        .p_two{
+            color: #c0c0c0;
+            text-align: center;
+            line-height: 0.5px;
+            font-size: 10px;
+            cursor: url(./oc.png),auto;
+        }
+        .go{
+            background-color: #2196f3;
+            width: 30px;
+            height: 20px;
+            
+            border-bottom-right-radius:5px;
+            transition: 0.5s;
+            position: fixed;
+            left: 128px;
+            top: 46px;
+            cursor: url(./oc.png),auto;
+        }
+        .img{
+            transition: 0.9s;
+            cursor: url(./oc.png),auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="card" class="card">
+        <p class="p_one">网盘问卷调查</p>
+        <p class="p_two">更新反馈</p>
+        <div class="go">
+            <svg class="img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+            </svg>
+        </div>
+    </div>
+</body>
+<script>
+    //let onm = document.getElementById('card')
+    //onm.onclick = function onon() {
+    //                
+    //            }
+</script>
+</html>

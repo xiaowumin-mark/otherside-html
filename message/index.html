@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小镇网盘通知</title>
+    <style>
+        @font-face {
+  font-family: "jb";font-weight: 400;src: 
+  url("../font/hp/hp.woff2") format("woff2"),
+  url("../font/hp/hp.woff") format("woff");
+  font-display: swap;
+  
+}
+        .card {
+  position: relative;
+  width: 500px;
+  height: 200px;
+  color: #2e2d31;
+  background: rgb(33, 150, 243);
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.temporary_text {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 6px 12px;
+  color: #f8f8f8;
+}
+
+.card_title {
+  font-weight: bold;
+}
+
+.card_content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+    /* edit the width to fit card */
+  width: 100%;
+  padding: 20px;
+  background: #f2f2f2;
+  border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+  transform: translateY(150px);
+  transition: transform .25s;
+}
+
+.card_content::before {
+  content: '';
+  position: absolute;
+  top: -47px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  box-shadow: inset 48px 48px #f2f2f2;
+}
+
+.card_title {
+  color: #131313;
+  line-height: 15px;
+}
+
+.card_subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.card_description {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.card:hover .card_content {
+  transform: translateY(0);
+}
+
+.card:hover .card_description {
+  opacity: 1;
+  transition-delay: .25s;
+}
+h4{
+font-family: 'jb';
+}
+span{
+    font-family: 'jb';
+}
+p{
+    font-family: 'jb';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <article class="card">
+        <div class="temporary_text">
+            <h4>小镇网盘通知</h4>
+        </div>
+    <div class="card_content">
+        <span class="card_title">网盘更新链接</span>
+            <span class="card_subtitle">小镇网盘官网链接<br></span>
+            <p class="card_description">https://otherside.l1.svipss.top/disk/</p>
+        
+    </div>
+    </article>
+
+
+    <article class="card">
+        <div class="temporary_text">
+            <h4>小镇网盘通知</h4>
+        </div>
+    <div class="card_content">
+        <span class="card_title">具体通知</span>
+            <span class="card_subtitle">彼方深度官网链接</span>
+            <p class="card_description">https://otherside.l1.svipss.top/</p>
+        
+    </div>
+    </article>
+</body>
+</html>

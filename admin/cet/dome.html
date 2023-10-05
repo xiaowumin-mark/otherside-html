@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>帅气小智</title>
+		<style>
+	        body{
+	            background-color:black;
+	            margin: 0px;
+	            height: 100%;
+	            overflow: hidden;
+	        }
+	        
+	        #lottie{
+	            background-color:#fff;
+	            width:500px;
+	            height:500px;
+	        
+	            display:block;
+	            overflow: hidden;
+	            transform: translate3d(0,0,0);
+	            text-align: center;
+	            opacity: 1;
+	        }
+	
+	    </style>
+		
+	</head>
+	<body>
+		
+		<!--播放动画的容器-->
+		<div id="lottie"></div>
+		
+		<!--引入lottie.js 和  需要播放的json 文件-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.3/lottie.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="sy.json" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+			// 声明一个变量来设置lottie 播放属性
+		    var params = {
+		        container: document.getElementById('lottie'),  //播放的位置
+		        renderer: 'svg', 
+		        loop: false, //是否循环播放
+		        autoplay: true, //是否自动播放
+		        animationData: sy // 加载json的文件名
+		    };
+		
+		    var anim;
+		
+		    anim = lottie.loadAnimation(params); // 加载
+//		    lottie.playAnimation();   //播放
+//      	lottie.pauseAnimation();  //暂停
+//      	lottie.cancelAnimation();  //取消
+//      	lottie.getDuration();   //获取动画时长
+		
+		</script>
+		
+	</body>
+</html>
